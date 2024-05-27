@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+body {
+    background-color: rgb(20, 20, 20);
+}
+.main-grid {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    z-index: 1;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.8);
+}
+@keyframes inOut {
+    0% { transform: scale(1);}
+    50% { transform: scale(1.08);}
+    100% { transform: scale(1);}
+}
+#mute-btn {
+    transition: 0.5s;
+    position: fixed;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    border-radius: 50%;
+    border: 3px solid #ff0080;
+    padding: 0.8rem;
+    animation: inOut infinite 3s;
+    animation-timing-function: linear;
+    aspect-ratio: 1/1;
+    filter: brightness(0.6);
+    z-index: 1;
+}
+#mute-btn img{
+    width: 30px;    
+    height: 30px;
+}
+#space {
+    position: absolute;
+    width: 700px;
+    left: 50%;
+    bottom: 0%;
+    z-index: 0;
+}
+.rotate {
+    margin-right: 5rem;
+    font-family: 'Passion One';
+    font-size: 9rem;
+    writing-mode: vertical-rl;
+    animation: scrollingLoopv1 infinite 1.5s;
+    animation-timing-function: linear;
+    white-space:nowrap;
+    overflow: visible;
+    max-height: 100vh;
+    cursor: url('../images/white_cursor.png'), auto;
+}
+.rotate div {
+    color: rgb(255, 0, 128);
+    cursor: url('../images/white_cursor.png'), auto;
+}
+.rotate span {
+    cursor: url('../images/pink_cursor.png'), auto;
+}
+.landing {
+    position: relative;
+    z-index: 1;
+    font-weight: normal;
+}
+h1 {
+    position: relative;
+    font-weight: normal;
+    font-family: 'Passion One';
+    color: white;
+    font-size: 10rem;
+    animation-name: slideInDown;
+    animation-duration: 1s;
+    line-height: 1;
+}
+.landing .row-2 {
+    display: inline-block;
+    color: white;
+    
+}
+.landing .row-1::before {
+    content: '';
+    animation: toprowChangev1 infinite 15s;
+    animation-timing-function: linear;
+    animation-delay: 0.9s;
+}
+.landing .row-2::before {
+    content: '';
+    animation: botrowChangev1 infinite 15s;
+    animation-timing-function: linear;
+    animation-delay: 0.9s;
+}
+.category {
+    color: #ff0080;
+    font-family: 'Passion One';
+    font-size: 10rem;
+    font-weight: normal;
+    display: inline-block;
+    animation-name: slideInUp;
+    animation-duration: 1s;
+    cursor: url('../images/white_cursor.png'), auto;
+    margin-right: 0.5rem;
+}
+.category::before {
+    content: '';
+    animation: categoryChangev1 infinite 15s;
+    animation-timing-function: linear;
+    animation-delay: 0.9s;
+}
+@media only screen and (max-width: 599.98px) {
+        
+}
+
+@media (min-width: 600px) and (max-width: 767.98px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1299.98px) {
+    .landing .row-1, .landing .row-2, .category  {
+        font-size: 7rem;
+    } 
+    .landing .row-1::before {
+        animation: toprowChangev2 infinite 13s;
+    }
+    .landing .row-2::before {
+        animation: botrowChangev2 infinite 13s;
+    }
+    .category::before {
+        animation: categoryChangev2 infinite 13s;
+    }
+    .rotate {
+        font-size: 6rem;
+        animation: scrollingLoopv2 infinite 1.5s;
+        animation-timing-function: linear;
+    }
+    #space {
+        width: 450px;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1599.98px) {
+    .landing .row-1, .landing .row-2, .category  {
+        font-size: 7rem;
+    } 
+    .landing .row-1::before {
+        animation: toprowChangev2 infinite 13s;
+    }
+    .landing .row-2::before {
+        animation: botrowChangev2 infinite 13s;
+    }
+    .category::before {
+        animation: categoryChangev2 infinite 13s;
+    }
+    .rotate {
+        font-size: 6rem;
+        animation: scrollingLoopv2 infinite 1.5s;
+        animation-timing-function: linear;
+    }
+    #space {
+        width: 550px;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    
+}  

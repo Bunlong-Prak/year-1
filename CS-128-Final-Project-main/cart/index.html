@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/PinkLogo.svg">
+    <link rel="stylesheet" href="../style/blizzard.css">
+    <link rel="stylesheet" href="../style/nav.css">
+    <link rel="stylesheet" href="../style/cartDark.css">
+    <title>Checkout - Anime D. Store</title>
+    <script src="../scripts/cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="board">
+        <div class="blocker"></div>
+        <img class="logo" src="../Images/Logo.svg">
+    </div>
+    <div id="screen">
+        <div onmousemove="" class="main-grid">
+            <nav>
+                <ul>
+                    <li><a href="../">Home</a></li>
+                    <li><a class="active" href="../shop/">Shop</a></li>
+                    <li><a href="../about/">About</a></li>
+                    <li id="accountShow"><a href="../account/">Account</a></li>
+                </ul>
+            </nav>
+            <main class="mainCart">
+                <div class="widthCart">
+                    <div class="cartContainer">
+                        <div class="cartHeader cartPosition">
+                            <a class="cartText cartText1">
+                                <h3 class="cartTextHover">ITEM</h3>
+                            </a>
+                            <a class="cartText">
+                                <h3 class="cartTextHover">NAME</h3>
+                            </a>
+                            <a class="cartText cartText3 cartTextAlign">
+                                <h3 class="cartTextHover">QUANTITY</h3>
+                            </a>
+                            <a class="cartText cartText5 cartTextAlign">
+                                <h3 class="cartTextHover">PRICE</h3>
+                            </a>
+                            <a class="cartText cartText4 cartTextAlign">
+                                <h3 class="cartTextHover">SUBTOTAL</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cartBg">
+                        <ul class="cartBody" id='cartBody'>
+                        </ul>
+                    </div>
+                    <div class="borderTop"></div>
+                    <div class="checkout-grid">
+                        <main class="mainForm">
+                            <div class="Form">
+                                <div class="width">
+                                    <div class="head">
+                                        <h1>Customer Details</h1>
+                                    </div>
+                                    <div class="input-form">
+                                        <div class="form-box">
+                                            <label>Location</label>
+                                            <form>
+                                                <input type="text" placeholder="Ex: St504">
+                                            </form>
+                                        </div>
+                                        <div class="form-box">
+                                            <label>Phone Number</label>
+                                            <form>
+                                                <input type="text" placeholder="Ex: 012 122 122">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+                        <div class="checkoutButton">
+                            <p id="no-account" class="cartName">Please login to an account!</p>
+                            <div class="totalText">
+                                <div class="cartName">Total:</div>
+                                <div class="cartName" id="totalPrice"></div>
+                            </div>
+                            <button onclick="checkOut()" class="checkout-btn">CHECKOUT</button
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

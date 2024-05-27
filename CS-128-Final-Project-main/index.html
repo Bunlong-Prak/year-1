@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/PinkLogo.svg">
+    <link rel="stylesheet" href="./style/blizzard.css">
+    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/home_anim.css">
+    <link rel="stylesheet" href="./style/nav.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Home - Anime D. Store</title>
+</head>
+<body>
+    <audio id="bg-sound" src="./sounds/bg_music.mp3" loop></audio>
+    <div id="mute-btn" onclick="allowMusic()">
+        <img src="./Images/volume.png" alt="">
+    </div>
+    <div class="board">
+        <div class="blocker"></div>
+        <img class="logo" src="./images/Logo.svg">
+    </div>
+    <div id="screen">
+        <img id="space" src="./images/spacesuit.png" alt="">
+        <div onmousemove="" class="main-grid">
+            <nav>
+                <ul>
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="./shop/">Shop</a></li>
+                    <li><a href="./about/">About</a></li>
+                    <li id="accountShow"><a href="./account/">Account</a></li>
+                </ul>
+            </nav>
+            <main>
+                <section class="landing">
+                    <h1 class="row-1"></h1>
+                    <a href="./shop/"><span class="category"></span></a>
+                    <h1 class="row-2"></h1>
+                </section>
+                <h2 class="rotate">
+                    <div>
+                        <span style="color:white;">Anime</span> D. Store
+                        <span style="color:white;">Anime</span> D. Store
+                        <span style="color:white;">Anime</span> D. Store
+                    </div>
+                </h2>
+            </main>
+        </div>
+    </div>
+    <script src="./scripts/home.js"></script>
+</body>
+</html>

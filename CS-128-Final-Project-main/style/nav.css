@@ -1,0 +1,57 @@
+nav {
+    max-height: 100vh;
+    font-family: 'Raleway';
+    display: flex;
+    margin-left: 5rem;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.8);
+}
+nav .active {
+    color: rgb(255, 0, 128);
+}
+nav ul {
+    margin-bottom: 5rem;
+}
+nav a {
+    color: white;
+    font-size: 1.2rem;
+    transition: 0.2s;
+    text-transform: uppercase;
+    cursor: url('../images/white_cursor.png'), auto;
+}
+nav a:hover {
+    color: rgb(255, 0, 128);
+    font-size: 1.25rem;
+}
+@media only screen and (max-width: 599.98px) {
+        
+}
+
+@media (min-width: 600px) and (max-width: 767.98px) {
+
+}
+
+@media (min-width: 768px) and (max-width:1299.98px) {
+    nav a {
+        font-size: 1rem;
+    }
+    nav a:hover {
+        color: rgb(255, 0, 128);
+        font-size: 1.15rem;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1599.98px) {
+    nav a {
+        font-size: 1rem;
+    }
+    nav a:hover {
+        color: rgb(255, 0, 128);
+        font-size: 1.15rem;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    
+}
