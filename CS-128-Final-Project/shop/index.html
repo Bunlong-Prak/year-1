@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/PinkLogo.svg">
+    <link rel="stylesheet" href="../style/shop.css">
+    <link rel="stylesheet" href="../style/nav.css">
+    <link rel="stylesheet" href="../style/blizzard.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Shop - Anime D. Store</title>
+</head>
+
+<body>
+    <!-- For Google Login -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="module" src="../scripts/jwt-code.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="../scripts/shop.js"></script>
+    <!-- End -->
+    <div class="board">
+        <div class="blocker"></div>
+        <img class="logo" src="../images/Logo.svg">
+    </div>
+    <div id="screen">
+        <div onmousemove="" class="main-grid">
+            <section class="col-1">
+                <div class="filter">
+                    <div>
+                        <form onsubmit="searchItem();return false;">
+                            <input id="searchBar" class="search" type="text" placeholder="Search...">
+                        </form>
+                        <h1>Sort by:</h1>
+                        <ul>
+                            <li>Price: <span id="high" onclick="sortHigh()">HIGH</span> | <span id="low"
+                                    onclick="sortLow()">LOW</span> </li>
+                            <li>Release: <span id="new" class="selected" onclick="sortNew()">NEW</span> | <span id="old"
+                                    onclick="sortOld()">OLD</span></li>
+                        </ul>
+                        <div class="item-category">
+                            <div class="main-category">
+                                <h1>Categories: </h1>
+                            </div>
+                            <ul>
+                                <li onclick="toggleFigure()" id="figureCheckBox" class="active">
+                                    <label><div class="pink-checkbox"></div>Figures</label>
+                                </li>
+                                <li onclick="toggleCosplay()" id="cosplayCheckBox" class="active">
+                                    <label><div class="pink-checkbox"></div>Cosplays</label>
+                                </li>
+                                <li onclick="toggleApparel()" id="apparelCheckBox" class="active">
+                                    <label><div class="pink-checkbox"></div>Apparels</label>
+                                </li>
+                                <li onclick="toggleAccessory()" id="accessoryCheckBox" class="active">
+                                    <label><div class="pink-checkbox"></div>Accessories</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="../">Home</a></li>
+                        <li><a class="active" href="#">Shop</a></li>
+                        <li><a href="../about/">About</a></li>
+                        <li id="accountShow"><a href="../account/">Account</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <main>
+                <h1 class="title"><span class="category"></span> available now at <br><span>Anime D. Store</span></h1>
+                <section class="item-grid" id="item-grid">
+                </section>
+            </main>
+            <main class="col-3">
+                <section class="cart">
+                    <img onclick="toggleCart()" class="cartBtn" src="../Images/Logo.svg" alt="">
+                    <div id="page">
+                        <div class="cartBtn-wrapper"><img onclick="toggleCart()" class="cartBtn"
+                                src="../Images/Logo.svg" alt=""></div>
+                        <div class="cart-items" id="cartBucket">
+
+                        </div>
+                        <button onclick="checkOut()" class="checkout-btn">Check Out</button>
+                    </div>
+                </section>
+                <section class="profile">
+                    <div id="signInBtn"></div>
+                    <a id="googleInfo" href="../account/">
+                        <img id="googlePic">
+                        <h1 id="googleName"></h1>
+                    </a>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

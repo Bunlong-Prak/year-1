@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/PinkLogo.svg">
+    <link rel="stylesheet" href="../style/blizzard.css">
+    <link rel="stylesheet" href="../style/nav.css">
+    <link rel="stylesheet" href="../style/account.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Account - Anime D. Store</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <div class="board">
+        <div class="blocker"></div>
+        <img class="logo" src="../images/Logo.svg">
+    </div>
+    <div id="screen">
+        <div onmousemove="" class="main-grid">
+            <nav>
+                <ul>
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../shop/">Shop</a></li>
+                    <li><a href="../about/">About</a></li>
+                    <li id="accountShow"><a class="active" href="#">Account</a></li>
+                </ul>
+            </nav>
+            <main>
+                <section class="profile">
+                    <img id="googlePic">
+                    <div class="name-email">
+                        <h1 id="googleName">Blizzard Einzbern</h1>
+                        <h2 id="googleEmail">blizzard4e@gmail.com</h2>
+                    </div>
+                    <div class="trackrecord">
+                        <div>
+                            <h3>Items</h3>
+                            <h4 id="total-items">0</h4>
+                        </div>
+                        <div>
+                            <h3>Spent</h3>
+                            <h4 id="total-spent">$0</h4>
+                        </div>
+                        <div class="signOut">
+                            <a onclick="signOut()">Sign Out</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="history">
+                    <h1>Purchase History</h1>
+                    <div class="item">
+                        <h1>Items</h1>
+                        <h1>Name</h1>
+                        <h4>Price</h4>
+                        <h4>Quantity</h4>
+                        <h4>Date</h4>
+                    </div>
+                    <ul id="purchased-items">
+                    </ul>
+                </section>
+            </main>
+            <main></main>
+        </div>
+    </div>
+    <script src="../scripts/account.js"></script>
+</body>
+
+</html>

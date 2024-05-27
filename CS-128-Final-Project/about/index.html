@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/PinkLogo.svg">
+    <link rel="stylesheet" href="../style/blizzard.css">
+    <link rel="stylesheet" href="../style/nav.css">
+    <link rel="stylesheet" href="../style/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>About - Anime D. Store</title>
+</head>
+
+<body>
+    <div id="hacked-screen">
+        <video id="hacked-video">
+            <source src="../Images/hacked.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div id="ling-screen">
+        <video id="ling-video">
+            <source src="https://res.cloudinary.com/duzvevuup/video/upload/v1661888712/Anime%20D%20Store/eviling_tel3nm.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="board">
+        <div class="blocker"></div>
+        <img class="logo" src="../images/Logo.svg">
+    </div>
+    <div id="screen">
+        <div onmousemove="" class="main-grid">
+            <nav>
+                <ul>
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../shop/">Shop</a></li>
+                    <li><a class="active" href="#">About</a></li>
+                    <li id="accountShow"><a href="../account/">Account</a></li>
+                </ul>
+            </nav>
+            <main>
+                <h1>About Us</h1>
+                <p>
+                    We at
+                    <a class="hover-underline-animation" style="cursor: url('../Images/white_cursor.png'), default;"
+                        href="https://www.facebook.com/animedstore/" target="_blank">
+                        Anime D. Store
+                    </a>
+                    are a group of
+                    Otakus with a passion to bring in anime related items to Cambodia.
+                </p><br><br>
+                <p>
+                    Regarding our background, you can
+                    trace us back to 4 February 2017, when we first began running our anime page called
+                    <a class="hover-underline-animation" style="cursor: url('../Images/white_cursor.png'), default;"
+                        href="https://www.facebook.com/animedcambodia/" target="_blank">
+                        Anime D. Cambodia
+                    </a>.
+                </p><br><br>
+                <p>Dive into our creative team</p>
+                <div class="members-grid" style="margin-bottom: 1rem;">
+                    <div id="member1" class="member" onclick="useGauntlet()" onmouseenter="thanosVoice()" onmouseleave="stopthanosVoice()">
+                        <audio id="thanos-voice">
+                            <source src="../sounds/balance.wav" type="audio/ogg">
+                        </audio>
+                        <div class="image-layered">
+                            <img src="../images/profilethanos.jpg" alt="">
+                            <img src="../images/profile1.JPG" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Choung Pheng Ear</h2>
+                            <div>
+                                <p><span>Email</span>: eear@paragoniu.edu.kh</p>
+                                <div class="quote-layered">
+                                    <p>
+                                        <span>Hobbies</span>: Coding, Gaming<br>
+                                        <span>Quote</span>: The hardest choices require the strongest wills<br>
+                                    </p>
+                                    <p>
+                                        <span>Quote</span>: Perfectly balanced, as all things should be<br>
+                                        <img src="../Images/thanos_idle.png" id="thanos">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="snap-grid" style="position: relative; width: 80%;">
+                    <div id="magic-circle">
+                        <img id="magic-circle-img" src="../Images/green_circle.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="members-grid" style="width: 100%;" id="my-content">
+                            <div id="member3" class="member" onmouseenter="loveMusic()" onmouseleave="stopMusic()">
+                                <audio id="love-music">
+                                    <source src="../sounds/baby.wav" type="audio/ogg">
+                                </audio>
+                                <div class="image-layered">
+                                    <img src="../images/you1.jpg" alt="">
+                                    <img src="../images/layheng1.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h2>Layheng Hok</h2>
+                                    <div class="quote-layered" style="margin-bottom: 3.5rem;">
+                                        <p>
+                                            <span>Email</span>: lhok1@paragoniu.edu.kh<br>
+                                            <span>Hobbies</span>: Music
+                                        </p>
+                                        <p style="font-size: 4rem;">
+                                            X
+                                        </p>
+                                    </div>
+                                    <p class="specials"><span>Quote</span>: <span class="special">L</span>ook i might not have a fanc<span class="special">Y</span> car, but i fancy <span class="special">YOU</span></p>
+                                </div>
+                            </div>
+                            <div id="member2" class="member" onclick="printOut('Your computer has been hacked.')" onmouseenter="codeMusic()" onmouseleave="stopCodeMusic()">
+                                <audio id="code-music">
+                                    <source src="../sounds/coding.mp3" type="audio/ogg">
+                                </audio>
+                                <div class="image-layered">
+                                    <img src="../images/hackerman.gif" alt="">
+                                    <img src="../images/seakmeng1.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h2>Seakmeng Hor</h2>
+                                    <div>
+                                        <p><span>Email</span>: shor1@paragoniu.edu.kh </p>
+                                        <div class="quote-layered">
+                                            <p>
+                                                <span>Hobbies</span>: Gaming, Sleeping
+                                                <span>Quote</span>: ឈប់រៀន! ឈប់រីកចម្រើន!<br>
+                                            </p>
+                                            <p>
+                                                <span>Hobbies</span>: Gaming, Hacking<br>
+                                                <span>Quote</span>: <span id="hackText"></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="member5" class="member" onclick="showLing()" onmouseenter="lingVoice()" onmouseleave="stoplingVoice()">
+                                <audio id="ling-voice">
+                                    <source src="../sounds/lingvoicehover.wav" type="audio/ogg">
+                                </audio>
+                                <div class="image-layered">
+                                    <img src="../images/ling.png" alt="">
+                                    <img src="../images/sal2.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h2>Bovisal Zhou</h2>
+                                    <div>
+                                        <p><span>Email</span>: bzhou@paragoniu.edu.kh</p>
+                                        <p><span>Hobbies</span>: Gaming, TikTok, Facebook</p>
+                                        <div class="quote-layered">
+                                            <p><span>Quote</span>: Life is hard, but at least i have a pretty girlfriend</p>
+                                            <p><span>Quote</span>: The journey of a thousand miles begins with one step</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="member4" class="member" onmouseenter="rickMusic()" onmouseleave="stopRickMusic()">
+                                <audio id="rick-music">
+                                    <source src="../sounds/rick.wav" type="audio/ogg">
+                                </audio>
+                                <div class="image-layered">
+                                    <img src="../images/rickroll-roll.gif" alt="">
+                                    <img src="../images/long1.webp" alt="">
+                                </div>
+                                <div class="info">
+                                    <h2>Bunlong Prak</h2>
+                                    <div>
+                                        <p><span>Email</span>: bprak@paragoniu.edu.kh</p>
+                                        <div class="quote-layered">
+                                            <p>
+                                                <span>Hobbies</span>: Watching Animes<br>
+                                                <span>Quote</span>: If You Can't Beat The Game, You're Nothing But A Loser
+                                            </p>
+                                            <p>
+                                                <span>Hobbies</span>: Rick Rolling<br>
+                                                <span>Quote</span>: Never gonna give you up, never gonna let you down
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1>Contact Us</h1>
+                <p>Number: <span>+855 77 893 289</span></p>
+                <p>Email: <span>animedstore@paragoniu.edu.kh</span></p>
+                <h1>Socials</h1>
+                <div class="socials">
+                    <a href="https://www.facebook.com/animedstore/" target="_blank">
+                        <img src="../images/facebook.svg" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/animedcambodiastore/" target="_blank">
+                        <img src="../images/instagram.svg" alt="">
+                    </a>
+                    <a href="https://www.youtube.com/c/AnimeDCambodia" target="_blank">
+                        <img src="../images/youtube.svg" alt="">
+                    </a>
+                    <a href="https://discord.gg/RuMXTzJnta" target="_blank">
+                        <img src="../images/discord.svg" alt="">
+                    </a>
+                </div>
+                <h1>Location</h1>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d425.40666203325407!2d104.909402!3d11.5295005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095162945aa821%3A0xf02f2f7ed98a52d7!2sAnime%20D.%20Cambodia%20Store!5e0!3m2!1sen!2skh!4v1656691054653!5m2!1sen!2skh"
+                    width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>11° 31' 46"N, 104° 54' 36"E</p>
+            </main>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+        integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chance/1.1.8/chance.min.js"
+        integrity="sha512-dELYIOEzIECWdvsEdoywFOB4qKDmtQee33yD0dQnzAE7eBGKJ984VQXRLs/vlsP4Sb3VchbQL7iAy4NWqetCsw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="../scripts/rick.js"></script>
+    <script src="../scripts/ling.js"></script>
+    <script src="../scripts/love.js"></script>
+    <script src="../scripts/hack.js"></script>
+    <script src="../scripts/snap.js"></script>
+    <script src="../scripts/about.js"></script>
+</body>
+
+</html>

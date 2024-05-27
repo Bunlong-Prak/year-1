@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One&family=Raleway&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    cursor: url('../images/pink_cursor.png'), auto;
+}
+body {
+    overflow: hidden;
+}
+html {
+    background-color: rgb(20, 20, 20);
+    scroll-behavior: smooth;
+}
+.bg {
+    position: absolute;
+    margin-left: -10rem;
+    margin-top: -5rem;
+    width: 120vw;
+    height: auto;
+    filter: brightness(0.9);
+    z-index: -1;
+}
+.board {
+    position: absolute;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    animation-name: slideRight;
+    animation-delay: 0.7s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    z-index: 2;
+}
+.logo {
+    width: 100px;
+    height: auto;
+    filter: invert(26%) sepia(87%) saturate(5809%) hue-rotate(316deg) brightness(101%) contrast(101%);
+    z-index: 0;
+}
+.blocker {
+    position: absolute;
+    background-color: rgb(20, 20, 20);
+    min-width: 100px;
+    min-height: 100px;
+    animation-name: slideRight;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+.mb, .pb, .tb, .sd, .dt {
+    display: none;
+}
+@keyframes slideRight {
+    100% { 
+        transform: translateX(100%);
+        display: none;
+    }
+}
+@keyframes goUp {
+    100% { 
+        transform: translate(0, -100%);
+        display: none;
+    }
+}
+
+/* Mobiles */
+@media only screen and (max-width: 599.98px) {
+    .container {
+        width: 100%;
+    }
+    .mb {
+        display: block;
+    }
+}
+
+/* Phablets */
+@media (min-width: 600px) and (max-width: 767.98px) {
+    .container {
+        width: 100%;
+    }
+    .pb {
+        display: block;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+        width: 650px;
+    }
+    .tb {
+        display: block;
+    }
+}
+
+/* Small Desktops */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .container {
+        width: 992px;
+    }
+    .sd {
+        display: block;
+    }
+}
+
+/* Desktops */
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+    .dt {
+        display: block;
+    }
+}
+
+/* Scale 1.25 */
+@media (-webkit-min-device-pixel-ratio: 1.25) {
+    
+}
+
+/* Scale 1.5 */
+@media (-webkit-min-device-pixel-ratio: 1.5) {
+    
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Magdelin';
+    src: url('../fonts/magdelin_fonts/Magdelin-Regular.otf');
+}
+
+/* For Easy Copying */
+/* @media only screen and (max-width: 599.98px) {
+        
+}
+
+@media (min-width: 600px) and (max-width: 767.98px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1299.98px) {
+
+}
+
+@media (min-width: 1300px) and (max-width: 1599.98px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}  
